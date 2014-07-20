@@ -29,3 +29,4 @@ To make this work you need to ...
 * edit AndroidManifest.xml to include min/targetSdkVersion
 * edit MainActivity.scala to show two buttons and the text (and edit strings.xml accordingly)
 * delete `src/main/res/layout` (this is not needed anymore)
+* edit MainActivity.scala to add logging

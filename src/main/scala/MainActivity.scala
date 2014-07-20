@@ -10,9 +10,10 @@ import android.widget.Button
 import macroid._
 import macroid.FullDsl._
 
-class MainActivity extends Activity with Contexts[Activity] {
+class MainActivity extends Activity with Contexts[Activity] with AutoLogTag {
   override def onCreate(savedInstanceState: Bundle): Unit = {
     super.onCreate(savedInstanceState)
+    logD"entry"()
 
     setContentView {
       getUi {
@@ -21,11 +22,13 @@ class MainActivity extends Activity with Contexts[Activity] {
           w[Button] <~
             text(R.string.show_me) <~
             On.click {
+              logV"click - show me"()
               greeting <~ show
             },
           w[Button] <~
             text(R.string.hide_me) <~
             On.click {
+              logV"click - hide me"()
               greeting <~ hide
             },
           w[TextView] <~
@@ -35,5 +38,6 @@ class MainActivity extends Activity with Contexts[Activity] {
         ) <~ vertical
       }
     }
+    logD"exit"()
   }
 }
