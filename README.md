@@ -21,4 +21,11 @@ To make this work you need to ...
 * you can then delete project.properties (one file less to worry about)
 * delete `src/androidTest` and create `src/main/scala` and move `src/main/java/.../MainActivity.java` to `src/main/scala/MainActivity.scala` (and rename it to a scala file in the process) and delete `src/main/java`
 * edit `MainActivity.scala` and port it to Scala
-* add hello_text in `src/res/values/strings.xml` and reference it in `src/res/layout/main.xml`
+* add hello_text in `src/main/res/values/strings.xml` and reference it in `src/main/res/layout/main.xml`
+
+## Step 2: Turn it into a Macroid app
+
+* edit Build.scala to include the libraryDependencies
+* edit AndroidManifest.xml to include min/targetSdkVersion
+* edit MainActivity.scala to show two buttons and the text (and edit strings.xml accordingly)
+* delete `src/main/res/layout` (this is not needed anymore)
