@@ -4,7 +4,7 @@ The repo to drive the Scala Meetup on Android.
 
 To make this work you need to ...
 
-* install git and sbt
+* install git, sbt and the android SDK
 * you can then clone this repo and checkout the various tags/steps to walk through the tutorial
 
 ## Step 0: Get something to compile
