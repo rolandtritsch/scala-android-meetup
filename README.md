@@ -4,13 +4,13 @@ The repo to drive the Scala Meetup on Android.
 
 To make this work you need to ...
 
-* install git, sbt and the android SDK
+* install git, sbt (using macports or brew) and the [Android SDK](http://developer.android.com/sdk/index.html)
 * you can then clone this repo and checkout the various tags/steps to walk through the tutorial
 
 ## Step 0: Get something to compile
 
 * create an empty directory and in this directory create a directory called project
-* put the android.sbt file into this directory and run `sbt "gen-android-sbt android-21 scala.meetup TutorialApp"`
+* put the [android.sbt file](https://gist.github.com/rolandtritsch/a501102b0a22eb49488a) into this directory and run `sbt "gen-android android-21 scala.meetup TutorialApp"`
 * take a look at the files to understand what was generated
 * create an avd and start an emulator
 * run `sbt android:run` and you should see the MainActivity get started
