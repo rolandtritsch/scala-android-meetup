@@ -1,4 +1,5 @@
 target/
 project/project
-bin/
-local.properties
+
+.ensime
+.ensime_cache

@@ -22,6 +22,8 @@ To make this work you need to ...
 * delete `src/androidTest` and create `src/main/scala` and move `src/main/java/.../MainActivity.java` to `src/main/scala/MainActivity.scala` (and rename it to a scala file in the process) and delete `src/main/java`
 * edit `MainActivity.scala` and port it to Scala
 * add hello_text in `src/main/res/values/strings.xml` and reference it in `src/main/res/layout/main.xml`
+* (optional - if you want to use EMACS/ensime) put the [ensime.sbt file](https://gist.github.com/rolandtritsch/3688b7a0efe7085160dc) into the project directory and run `sbt gen-ensime`
+* run `sbt android:run` again and you should see the MainActivity to display the changed hello world text
 
 ## Step 2: Turn it into a Macroid app
 
