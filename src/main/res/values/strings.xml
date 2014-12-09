@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MainActivity</string>
-    <string name="hello_text">Hello Scala</string>
+    <string name="hello_text">Hello Macroid</string>
+    <string name="show_me">Show it ...</string>
+    <string name="hide_it">... hide it!</string>
 </resources>

@@ -27,8 +27,8 @@ To make this work you need to ...
 
 ## Step 2: Turn it into a Macroid app
 
-* edit Build.scala to include the libraryDependencies
+* add the [macroid dependencies](https://gist.github.com/rolandtritsch/7323f64778423492ca7b) to the build.sbt file (and/or check the [macroid-starter repo](https://github.com/macroid/macroid-starter) for the most current version of a/the build.sbt file)
 * edit AndroidManifest.xml to include min/targetSdkVersion
 * edit MainActivity.scala to show two buttons and the text (and edit strings.xml accordingly)
 * delete `src/main/res/layout` (this is not needed anymore)
-* edit MainActivity.scala to add logging
+* run `sbt android:run` again and you should see the MainActivity to display two buttons. Try them ...
